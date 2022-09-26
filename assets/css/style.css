@@ -599,7 +599,7 @@ main {
   text-align: center;
 }
 .download{
-  color: white;
+  color: hsl(187, 67%, 75%);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
