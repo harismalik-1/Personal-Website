@@ -21,6 +21,7 @@
   z-index:-1
 }
 
+ 
 @media (min-aspect-ratio: 16/9){
   .b-video{
     width: 100%;
@@ -241,6 +242,10 @@ body { background: var(--smoky-black); }
 \*-----------------------------------*/
 
 .sidebar,
+/* .sidebar{
+  width: 300px;
+
+} */
 article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
@@ -248,6 +253,17 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+}
+.sidebar-info span{
+  
+  display: block;
+  width: 200%
+
+}
+.avatar-box img{
+ max-width: 100%;
+ max-height: 100%;
+ display: block;
 }
 
 .separator {
@@ -266,7 +282,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 10px;
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow-1);
   z-index: 1;
@@ -274,6 +290,7 @@ article {
 
 .icon-box::before {
   content: "";
+  size: 20rem;
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
@@ -345,12 +362,12 @@ article.active {
   border-radius: 5px;
 }
 
-.has-scrollbar::-webkit-scrollbar-button { width: 20px; }
+.has-scrollbar::-webkit-scrollbar-button { width: 50px; }
 
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
-  padding: 15px;
+  padding: 0;
   padding-top: 45px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -413,25 +430,18 @@ main {
 
 .info-content .name {
   color: var(--white-2);
-  font-size: var(--fs-3);
+  font-size: 8;
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
   margin-bottom: 10px;
+  align-items:center;
+  display:block;
 }
-.info-content .engr{
-  color: var(--white-2);
-  font-size: 14px;
-  font-weight: var(--fw-500);
-  letter-spacing: -0.25px;
-  margin-bottom: 10px;
-  align-items: center;
-}
-
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
-  font-size: 13px;
-  font-weight: var(--fw-300);
+  font-size: 12.5px;
+  font-weight: 5px;
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
@@ -560,7 +570,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: 17px;
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -1964,7 +1974,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 130px; }
 
   .info-content .name {
     white-space: nowrap;
